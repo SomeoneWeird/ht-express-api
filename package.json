@@ -1,0 +1,43 @@
+{
+  "name": "ht-express-api",
+  "version": "0.0.1",
+  "description": "Template for APIs using express and hudson-taylor",
+  "main": "lib/server.js",
+  "scripts": {
+    "test": "semistandard && mocha --compilers js:babel/register -R spec --recursive --bail",
+    "start": "node start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SomeoneWeird/ht-express-api.git"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "hudson-taylor"
+  ],
+  "author": "Adam Brady <adam@boxxen.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SomeoneWeird/ht-express-api/issues"
+  },
+  "homepage": "https://github.com/SomeoneWeird/ht-express-api#readme",
+  "dependencies": {
+    "babel": "^5.8.29",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "ht-express": "^1.0.0",
+    "ht-schema": "^3.1.4",
+    "hudson-taylor": "^6.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3",
+    "semistandard": "^7.0.2"
+  },
+  "semistandard": {
+    "globals": [
+      "describe",
+      "it"
+    ]
+  }
+}
